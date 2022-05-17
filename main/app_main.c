@@ -167,8 +167,8 @@ static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event)
     switch (event->event_id) {
         case MQTT_EVENT_CONNECTED:
             //isServerConnected = true;
-          /*  ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-            msg_id = esp_mqtt_client_subscribe(client, "v1/devices/me/attributes", 1);
+            ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+        /*  msg_id = esp_mqtt_client_subscribe(client, "v1/devices/me/attributes", 1);
             ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
 
             msg_id = esp_mqtt_client_subscribe(client, "/topic/qos1", 1);
